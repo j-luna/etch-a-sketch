@@ -1,0 +1,24 @@
+.container {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    color: red;
+    
+
+}
+
+.container > div {
+    border: solid black 2px;
+}
+
+.container > div:hover {
+    background-color: red;
+}
+
+.clear {
+    background-color: white;
+}
+
+.color {
+    background-color: red;
+}
