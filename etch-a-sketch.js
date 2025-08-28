@@ -18,10 +18,6 @@ function drawGrid (sideLen) {
         gridDiv.addEventListener("mouseover", function (e) {
             e.target.setAttribute("style", `background-color: rgb(${randomRgb()},${randomRgb()},${randomRgb()})`)
         })
-
-        // gridDiv.addEventListener("mouseout", function (e) {
-        //    e.target.classList.toggle("grid-div-colored");
-        //})
     }
 }
 
