@@ -16,13 +16,17 @@ function drawGrid (sideLen) {
     const gridDivList = document.querySelectorAll(".grid-div");
     for (let gridDiv of gridDivList) {
         gridDiv.addEventListener("mouseover", function (e) {
-            e.target.classList.add("grid-div-colored");
+            e.target.setAttribute("style", `background-color: rgb(${randomRgb()},${randomRgb()},${randomRgb()})`)
         })
 
         // gridDiv.addEventListener("mouseout", function (e) {
         //    e.target.classList.toggle("grid-div-colored");
         //})
     }
+}
+
+function randomRgb() {
+    return Math.floor(Math.random() * 256);
 }
 
 let gridSize = 16;
